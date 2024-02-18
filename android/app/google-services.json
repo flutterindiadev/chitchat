@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "539537376020",
+    "firebase_url": "https://chitchat-1abd2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chitchat-1abd2",
+    "storage_bucket": "chitchat-1abd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539537376020:android:f00f91facd3006de8ab801",
+        "android_client_info": {
+          "package_name": "com.chitchat.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539537376020-5kq6p2p4bv6j9h2rsb1pel6i8756q2cc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chitchat.app",
+            "certificate_hash": "9637f2b1778dc3be45c68d285dafee4f663e3ccf"
+          }
+        },
+        {
+          "client_id": "539537376020-1968761i0j406rec7jaig58hbsmpeuat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdhDrYxYj4n30sJUDu-AKe9Fh3DXICVnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539537376020-1968761i0j406rec7jaig58hbsmpeuat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "539537376020-2afeju7c2srrntgks8javr9dioe12bci.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mihirsapplication.app.testProject"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539537376020:android:559bbf53a826b19a8ab801",
+        "android_client_info": {
+          "package_name": "com.example.chitchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539537376020-1968761i0j406rec7jaig58hbsmpeuat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdhDrYxYj4n30sJUDu-AKe9Fh3DXICVnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539537376020-1968761i0j406rec7jaig58hbsmpeuat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "539537376020-2afeju7c2srrntgks8javr9dioe12bci.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mihirsapplication.app.testProject"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539537376020:android:d5c03cd10dc4c9d08ab801",
+        "android_client_info": {
+          "package_name": "com.mihirsapplication.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539537376020-17l8mdaa3rrfb685fk7n91bhn7u4a5em.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mihirsapplication.app",
+            "certificate_hash": "9637f2b1778dc3be45c68d285dafee4f663e3ccf"
+          }
+        },
+        {
+          "client_id": "539537376020-1968761i0j406rec7jaig58hbsmpeuat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdhDrYxYj4n30sJUDu-AKe9Fh3DXICVnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539537376020-1968761i0j406rec7jaig58hbsmpeuat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "539537376020-2afeju7c2srrntgks8javr9dioe12bci.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mihirsapplication.app.testProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
