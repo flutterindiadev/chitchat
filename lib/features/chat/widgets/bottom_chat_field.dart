@@ -35,22 +35,6 @@ class _BottomChatFieldState extends ConsumerState<BottomChatField> {
   bool isRecording = false;
   FocusNode focusNode = FocusNode();
 
-  @override
-  void initState() {
-    super.initState();
-    _soundRecorder = FlutterSoundRecorder();
-    // openAudio();
-  }
-
-  // void openAudio() async {
-  //   final status = await Permission.microphone.request();
-  //   if (status != PermissionStatus.granted) {
-  //     throw RecordingPermissionException('Mic permission not allowed!');
-  //   }
-  //   await _soundRecorder!.openRecorder();
-  //   isRecorderInit = true;
-  // }
-
   void sendTextMessage() async {
     if (isShowSendButton) {
       ref.read(chatControllerProvider).sendTextMessage(
@@ -97,8 +81,12 @@ class _BottomChatFieldState extends ConsumerState<BottomChatField> {
   }
 
   void selectImage() async {
-    File? image = await pickImageFromGallery(context);
-    sendFileMessage(image!, MessageEnum.image);
+    try {
+      File? image = await pickImageFromGallery(context);
+      if (image != null) {
+        sendFileMessage(image!, MessageEnum.image);
+      }
+    } catch (e) {}
   }
 
   void selectVideo() async {
@@ -147,8 +135,6 @@ class _BottomChatFieldState extends ConsumerState<BottomChatField> {
   void dispose() {
     super.dispose();
     _messageController.dispose();
-    _soundRecorder!.closeRecorder();
-    isRecorderInit = false;
   }
 
   @override
@@ -159,9 +145,12 @@ class _BottomChatFieldState extends ConsumerState<BottomChatField> {
       children: [
         isShowMessageReply ? const MessageReplyPreview() : const SizedBox(),
         Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Expanded(
               child: TextFormField(
+                maxLines: 3,
+                minLines: 1,
                 focusNode: focusNode,
                 controller: _messageController,
                 onChanged: (val) {
@@ -181,7 +170,7 @@ class _BottomChatFieldState extends ConsumerState<BottomChatField> {
                   prefixIcon: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     child: SizedBox(
-                      width: 100,
+                      width: 48,
                       child: Row(
                         children: [
                           IconButton(

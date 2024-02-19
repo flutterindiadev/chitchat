@@ -20,9 +20,7 @@ class Fcm {
 
     final fcmToken = await _firebaseMessaging.getToken();
 
-    print("fcmToken ======>${fcmToken!}");
-
-    _prefs.setString('fcmtoken', fcmToken);
+    _prefs.setString('fcmtoken', fcmToken!);
 
     initPushNotification();
 
